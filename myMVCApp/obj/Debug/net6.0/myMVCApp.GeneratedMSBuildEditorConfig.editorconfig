@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = myMVCApp
+build_property.RootNamespace = myMVCApp
+build_property.ProjectDir = F:\Semester 6\myMVCApp\myMVCApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\Semester 6\myMVCApp\myMVCApp
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Product/PIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Services/BookingForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcQm9va2luZ0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Services/displayInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcZGlzcGxheUluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Services/ServicesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcU2VydmljZXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Semester 6/myMVCApp/myMVCApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dqd0u55kxf

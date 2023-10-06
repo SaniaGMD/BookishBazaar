@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - myMVCApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/myMVCApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #B76E79;">
+            <a class="navbar-brand" href="#" style="color: white";>BeautyLuxe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" style="color: white"  id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" style="color: white">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="color: white;" href="@Url.Action("Index", "Home") ">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="@Url.Action("About", "Home")"> About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: white;" href="@Url.Action("Privacy", "Home") id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" style="color: #B76E79;" href="@Url.Action("ServicesList", "Services") ">Facials</a>
+                            <a class="dropdown-item" style="color: #B76E79;" href="@Url.Action("ServicesList", "Services") ">Therapies</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" style="color: #B76E79;" href="@Url.Action("ServicesList", "Services") "">Lasers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="@Url.Action("Privacy", "Home")"> Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="@Url.Action("BookingForm", "Services")"> Book your Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="@Url.Action("PIndex", "Product")"> Products</a>
+                    </li>
+                </ul>
+
+                <!-- Form with search input and button -->
+               
+
+               <form class="form-inline my-2 my-lg-0" >
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" style="color: white;" type="submit">Search</button>
+               </form>
+
+
+            </div>
+        </nav>
+
+
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-auto py-3">
+        <div class="container">
+            &copy; 2023 - myMVCApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

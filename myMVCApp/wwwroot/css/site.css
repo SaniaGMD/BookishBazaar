@@ -1,0 +1,26 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure minimum height of the viewport */
+}
+
+main {
+    flex: 1; /* Allow main content to grow and take available space */
+}
