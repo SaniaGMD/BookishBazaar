@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+   @model List<myMVCApp.Models.Category>
+
+    <h2>Categories</h2>
+
+    <p>
+        <a asp-action="CCreate">Create New</a>
+    </p>
+
+    @if (Model != null && Model.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model)
+                {
+                    <tr>
+                        <td>
+                            @category.Id
+                        </td>
+                        <td>
+                            @category.Name
+                        </td>
+                        <td>
+                            <a asp-action="CEdit" asp-route-id="@category.Id">Edit</a> |
+                            <a asp-action="CDetails" asp-route-id="@category.Id">Details</a> |
+                            <a asp-action="CDelete" asp-route-id="@category.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No categories available.</p>
+    }
+
+
+}

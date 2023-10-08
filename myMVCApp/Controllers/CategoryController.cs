@@ -5,31 +5,35 @@ namespace myMVCApp.Controllers
 {
     public class CategoryController : Controller
     {
-        // Static list to simulate data storage
-        private static List<Category> categories = new List<Category>();
+        private static List<Category> categories = new List<Category>
+        {
+            new Category { Id = 1, Name = "Romance", ProductIds = new List<int> { 1, 2, 3 } },
+            new Category { Id = 2, Name = "Drama", ProductIds = new List<int> { 4, 5 } }
+          
+        };
 
-        // GET: Category
-        public ActionResult Index()
+      
+        public ActionResult CIndex()
         {
             return View(categories);
         }
 
-        // GET: Category/Create
-        public ActionResult Create()
+       
+        public ActionResult CCreate()
         {
             return View();
         }
 
-        // POST: Category/Create
+      
         [HttpPost]
-        public ActionResult Create(Category category)
+        public ActionResult CCreate(Category category)
         {
             categories.Add(category);
-            return RedirectToAction("Index");
+            return RedirectToAction("CIndex");
         }
 
-        // GET: Category/Edit/5
-        public ActionResult Edit(int id)
+        
+        public ActionResult CEdit(int id)
         {
             var category = categories.FirstOrDefault(c => c.Id == id);
             if (category == null)
@@ -43,9 +47,9 @@ namespace myMVCApp.Controllers
             throw new NotImplementedException();
         }
 
-        // POST: Category/Edit/5
+       
         [HttpPost]
-        public ActionResult Edit(Category category)
+        public ActionResult CEdit(Category category)
         {
             var existingCategory = categories.FirstOrDefault(c => c.Id == category.Id);
             if (existingCategory == null)
@@ -53,11 +57,11 @@ namespace myMVCApp.Controllers
 
             existingCategory.Name = category.Name;
 
-            return RedirectToAction("Index");
+            return RedirectToAction("CIndex");
         }
 
-        // GET: Category/Delete/5
-        public ActionResult Delete(int id)
+        
+        public ActionResult CDelete(int id)
         {
             var category = categories.FirstOrDefault(c => c.Id == id);
             if (category == null)
@@ -66,17 +70,6 @@ namespace myMVCApp.Controllers
             return View(category);
         }
 
-        // POST: Category/Delete/5
-        [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            var category = categories.FirstOrDefault(c => c.Id == id);
-            if (category != null)
-                categories.Remove(category);
-
-            return RedirectToAction("Index");
-        }
-    
-
+ 
 }
 }

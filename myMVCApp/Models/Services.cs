@@ -3,7 +3,6 @@
 namespace myMVCApp.Models
 {
     public class Services
-
     {
         public string? Name { get; set; }
         public int Price { get; set; }
